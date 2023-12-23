@@ -1,0 +1,30 @@
+﻿@model AwesomeNetwork.ViewModels.Account.UserViewModel
+@{
+    ViewData["Title"] = Model.User.GetFullName();
+}
+
+
+<div class="center">
+    <h1>@ViewData["Title"]</h1>
+</div>
+<br />
+<div class="text-left">
+    <div class="new-text">
+        <p>Статус:@Model.User.Status</p>
+        <p>Дата рождения:@Model.User.BirthDate</p>
+        <p>О себе:@Model.User.About</p>
+        <p>Email:@Model.User.Email</p>
+        <br />
+        <hr />
+        <p>Список друзей</p>
+        <hr />
+    </div>
+    <div class="div_for_photo">
+    <img class="new-photo" width="300px" height="300px" src="http://pngimg.com/uploads/husky/husky_PNG19.png" />
+    <button class="enter_submit">Редактировать</button>
+    </div>
+
+    
+
+
+
